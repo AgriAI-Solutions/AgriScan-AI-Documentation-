@@ -15,7 +15,7 @@ The solution will lower the workload.
 It will give a path from detection to corrective actions, for Plant diseases that threaten crops.
 It will also bring expertise to smallholder farmers who cannot afford or reach expert plant pathologists.
 
-Primary Objectives:
+Business Objectives:
  Increase the accuracy of plant disease diagnosis to than 75% using the PlantVillage dataset
  Cut down the time needed for disease diagnosis from days to just seconds
  Boost crop prognosis by detecting diseases early and helping farmers make smart agricultural decisions
@@ -29,6 +29,26 @@ Scalability & Growth:
  Create a full ecosystem of tools and services that grow from the foundation of the PlantVillage dataset
  Allow the system to connect with IoT sensors for complete plant health monitoring
  Support the detection of multiple diseases at once especially in cases of complex plant infections.
+
+3.BUSINESS SUCCESS CRITERIA
+A. Accuracy
+The goal is to have least 75%+ accuracy when classifying plant foliar images into the 38 disease categories across 14 crop species. 
+The system needs to have precision and high recall for each disease class to make sure the identification is reliable.
+
+B. Time Efficiency
+The system needs to process each leaf image and create an analysis report, including detection, classification,
+confidence scores and management recommendations in less than 1 second per image (CPU inference).
+
+C. Confidence Score
+The system must give a confidence score (%) for each prediction along with a reliability assessment so users understand how certain the diagnosis is.
+
+D. Actionable Insights
+The system must provide disease- information including symptoms, prevention strategies and treatment recommendations so farmers can take immediate action.
+
+E. Accessibility
+The system must be easy to use for -technical people through simple interfaces (command-line web application) 
+and work without internet after the model is trained to help remote areas that have no connectivity.
+
 
 
 
