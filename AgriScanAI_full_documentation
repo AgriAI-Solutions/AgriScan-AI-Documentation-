@@ -49,6 +49,17 @@ E. Accessibility
 The system must be easy to use for -technical people through simple interfaces (command-line web application) 
 and work without internet after the model is trained to help remote areas that have no connectivity.
 
+ 4. BUSINESS BACKGROUND
+South Africa and the rest of the continent have big problems in agriculture one of the most serious being the very low number of agricultural extension officers and plant pathologists.
+The people who are working in these roles are often very busy covering areas with not enough resources. 
+This leads to disease diagnosis, wrong identification and missed chances to treat which causes big crop losses and money problems for smallholder farmers.
+Smallholder farmers, who are the farmers in Africa can't get or afford expert plant pathologists for disease diagnosis. 
+They depend on ways of knowing or wait for help from extension services, which often comes too late. 
+Diseases such as Late Blight in potatoes Blight in tomatoes and Cedar Apple Rust in apples can destroy entire harvests if not found early.
+AgriAI-Solutions a company that works with AI saw these problems.Created AgriScan AI—an AI platform made to help reduce the workload and mistakes of people working in agriculture by automatically checking leaf images for early signs and classifying plant diseases.
+It uses Deep Learning (Convolutional Neural Networks) to figure out the type of disease, across different crops.
+This automatic process helps with classification and finding diseases early. It is a tool that gives farmers, agricultural extension officers and researchers confidence when looking at plant health allowing them to act quickly and cut down on crop losses.
+
 
 
 
