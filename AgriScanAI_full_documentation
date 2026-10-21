@@ -80,8 +80,44 @@ The system must generate summary reports and visualizations such as confusion ma
 The system must be portable and deployable on consumer hardware without needing a specialized GPU for inference
 The system must provide reliability assessments that are based on confidence scores
 
+7. RISKS
+
+Risk: Misclassification due to poor-quality images or ambiguous symptoms. Inaccuracy
+Mitigation: Avoid data imbalance by ensuring the AI has training data from every class used for classification. The PlantVillage dataset gives a mix of disease classes.
+Mitigation: Use Data Augmentation techniques such as flips, small rotations of ±18° zoom of ±10% and contrast changes of ±10% to grow the training data while keeping biological features intact.
+This helps the AI learn that a disease looks the same even if the picture is slightly turned or a bit brighter.
+Mitigation: Train the AI carefully for accuracy by using callbacks like EarlyStopping, ModelCheckpoint and ReduceLROnPlateau. These tools help the model perform well and stop it from overfitting.
+
+ Risk: End User Over-reliance on AI
+Mitigation: Build a reporting system that shows confidence scores for example "Late Blight – 92%" and a reliability note to stop users from trusting uncertain predictions blindly.
+Mitigation: Mandate mandatory disclaimer on every report stating the AI system is a decision support tool and does not replace certified plant pathologists 
+or agricultural extension officers. Final decisions must come from agricultural professionals.
+Mitigation: Offer the three predictions with their confidence scores so users can look at other possible diagnoses when the main prediction is not very confident.
+
+Risk: Limited User Adoption Among Smallholder Farmers
+Mitigation: Explain how the system works and give clear "how to use" instructions in language.
+Mitigation: Offer interface choices, like command line and web application so people with different technical skills can use the system.
+Mitigation: Make sure the system can run offline so it helps farmers in areas that lack internet.
+Mitigation: Give actionable management advice written in everyday language.
+
+ Risk: Technical Failure or Deployment Issues
+Mitigation: Host the AI solution on cloud services to provide scalability and stability.
+Mitigation: Supply a model of about 6 MB that can run on consumer hardware at the edge.
+Mitigation:Add error handling and validation, in the codebase to avoid crashes.
+
+ Risk: Environmental Factors Not Accounted For
+Mitigation: State that the system relies only on visual symptoms and does not include weather, soil or pest conditions.
+Mitigation: Suggest that agricultural extension officers verify findings in the field for crops or serious outbreaks.
+Mitigation: Plan future work to add sensors so the system can monitor plant health more completely.
+
+Risk: Dataset Bias and Limited Generalization
+Mitigation: Note that the PlantVillage dataset contains images taken in controlled settings; the AI may not work well on real field images.
+Mitigation: Use data augmentation to mimic real‑world variations and improve robustness.
+Mitigation: Document that field conditions can affect performance and advise practices for taking clear images.
+
 
 8. TOOLS AND TECHNIQUES
+
 A. Python
 Python is the development language because of a wide range of AI/ML libraries strong community support and an extensive agricultural data science ecosystem.
 
@@ -134,6 +170,4 @@ Training Images: 43,596 images (80% training with augmentation 20% validation wi
 Test Images: 10,709 images (no augmentation, real-world conditions)
 Classes:38 disease conditions across 14 crop species
 Image Format: RGB resized to 128x128 pixels
-
-
 
