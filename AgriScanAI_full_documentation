@@ -81,7 +81,59 @@ The system must be portable and deployable on consumer hardware without needing 
 The system must provide reliability assessments that are based on confidence scores
 
 
+8. TOOLS AND TECHNIQUES
+A. Python
+Python is the development language because of a wide range of AI/ML libraries strong community support and an extensive agricultural data science ecosystem.
 
+B. Machine Learning and Deep Learning Techniques
+Convolutional Neural Networks (CNNs) – Convolutional Neural Networks (CNNs) are used for disease detection and classification from leaf images
+Custom CNN Architecture– Custom CNN Architecture is built from scratch (no transfer learning) with 4 blocks
+BatchNormalization– BatchNormalization is used for training stability and faster convergence
+Dropout Regularization – Dropout Regularization prevents overfitting with a 0.5 dropout rate
+Data Augmentation – Data Augmentation includes flip, rotation up to ±18° zoom up to ±10% and contrast adjustment up to ±10% to expand the training dataset while preserving biological features
+Transfer Learning Foundation – Transfer Learning Foundation is a model architecture designed for future enhancement with pre-trained models such as ResNet and EfficientNet
+
+C. Python Libraries
+ TensorFlow (2.21.0) – TensorFlow (2.21.0) is the backbone for deep learning and neural network operations
+ Keras (3.15.1)– Keras (3.15.1) is a high-level API for building and training CNN models
+ NumPy (2.4.6) – NumPy (2.4.6) is used for handling numerical operations and array manipulations
+ Matplotlib (3.11.2)– Matplotlib (3.11.2) is used for generating training graphs (accuracy/loss curves) and confusion matrix visualizations
+ scikit-learn (1.9.1)– scikit-learn (1.9.1) is used for confusion matrix generation and classification report metrics (precision, recall, F1-score)
+ Pillow (PIL) (12.3.0)– Pillow (PIL) (12.3.0) is used for image loading, preprocessing and format conversion
+ OS – OS is used for file system operations and path management
+ JSON – JSON is used for saving/loading class names and training history
+ ARGPARSE – ARGPARSE is used for command-line argument parsing
+ RANDOM– RANDOM is used for reproducibility ( results across runs)
+
+D. Development and Collaboration Tools and Techniques
+ Face-to-face meetings– Face-to-face meetings are used to discuss the work and brainstorm ideas
+ WhatsApp – WhatsApp is used for easier communications
+ Github – Git and GitHub provide version control, code collaboration and project management
+ Visual Studio Code – Visual Studio Code is used for developing the AI codebase
+
+ E. Support Tools
+Grammarly– Grammarly is used for formatting documentation
+MS Word – MS Word is used for generating documentation for AgriScan AI project
+Notepad– Notepad is used for generating documentation on how to use AgriScan AI
+Canva/Figma – Canva/Figma is used for creating poster and presentation design
+MS PowerPoint– MS PowerPoint is used for project presentations
+
+F. Model Architecture Details
+Input: 128x128 RGB images (standardized for computation)
+Convolutional Blocks: 4 blocks with increasing filter sizes (32, 64 128 128)
+Activation Functions: ReLU for layers and Softmax for the output layer
+Pooling: MaxPooling2D is used for dimensionality reduction
+Optimizer: Adam with a learning rate of 1e-4
+Loss Function: Categorical cross-entropy
+Metrics: Accuracy, Precision and Recall
+Callbacks:EarlyStopping with patience 3 ModelCheckpoint that saves the model by validation accuracy and ReduceLROnPlateau with a factor of 0.5 and patience 2
+
+G. Dataset Specifications
+Source: PlantVillage dataset ( available for research)
+Training Images: 43,596 images (80% training with augmentation 20% validation without augmentation)
+Test Images: 10,709 images (no augmentation, real-world conditions)
+Classes:38 disease conditions across 14 crop species
+Image Format: RGB resized to 128x128 pixels
 
 
 
