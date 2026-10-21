@@ -1,1 +1,17 @@
+1. AI SOLUTION
+Plant diseases pose a threat to global food security and agricultural productivity.
+Diagnosing Plant diseases takes a lot of time and needs many resources and expertise. 
+Farmers and other agricultural practitioners usually check leaves by hand. 
+This manual inspection of symptoms is easy to make mistakes,
+especially in places that do not have many resources. Smallholder farmers and
+agricultural extension officers find it hard to identify Plant diseases quickly because they do not have access to plant pathologists or diagnostic services.
+We plan to use the PlantVillage dataset. This dataset contains thousands of plant leaf images that have already been checked by experts.
+The dataset is quality and reliable.
+We will build a tool that helps practitioners and farmers detect and classify foliar diseases. The tool uses learning for image classification. 
+It can recognise 38 Plant diseases across 14 key crop species: Apple, Blueberry, Cherry, Corn,
+Grape, Orange, Peach, Bell Pepper, Potato, Raspberry, Soybean, Squash, Strawberry and Tomato.
+This AI solution matches South African goals of using AI technologies to build new tools for agriculture.
+The solution will lower the workload. 
+It will give a path from detection to corrective actions, for Plant diseases that threaten crops.
+=It will also bring expertise to smallholder farmers who cannot afford or reach expert plant pathologists.
 
