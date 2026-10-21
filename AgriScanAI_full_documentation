@@ -21,5 +21,15 @@ Primary Objectives:
  Boost crop prognosis by detecting diseases early and helping farmers make smart agricultural decisions
  Lower agricultural losses and reduce input costs for farmers while still maintaining high crop quality
  Expand access to plant disease diagnosis in low-resource and rural areas
- Show how AgriScan AI can automate the process of diagnosing plant diseases in agriculture
+ Show how AgriScan AI can automate the process of diagnosing plant diseases in agriculture.
+
+Scalability & Growth:
+ Build methods that can be applied to a wider range of agricultural imaging tasks such as stem, root and fruit diseases
+ Design a system that allows for continuous updates and expansion of the dataset, with regional disease data
+ Create a full ecosystem of tools and services that grow from the foundation of the PlantVillage dataset
+ Allow the system to connect with IoT sensors for complete plant health monitoring
+ Support the detection of multiple diseases at once especially in cases of complex plant infections.
+
+
+
 
