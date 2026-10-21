@@ -60,6 +60,27 @@ AgriAI-Solutions a company that works with AI saw these problems.Created AgriSca
 It uses Deep Learning (Convolutional Neural Networks) to figure out the type of disease, across different crops.
 This automatic process helps with classification and finding diseases early. It is a tool that gives farmers, agricultural extension officers and researchers confidence when looking at plant health allowing them to act quickly and cut down on crop losses.
 
+5. REQUIREMENTS
+ A. Functional Requirements:
+ Input plant leaf images in format such as file paths, file objects, PIL images or NumPy arrays
+ The system must Preprocess images, which includes resizing each image to 128×128 pixels adjusting contrast and normalizing pixel values
+ The system must predict diseases by assigning each image to one of 38 categories across 14 crop species. These categories also contain healthy classes
+ The system must generate a report that summarizes the plant species, disease name, confidence score the top three predictions, symptoms, prevention strategies and recommended treatments
+ The system must provide management advice for every disease that is detected
+ The system must support batch processing allowing multiple images to be processed at once
+ The system must distinguish between healthy and diseased foliage and display clear status indicators for each
+
+B. Non-Functional Requirements:
+The system must be able to handle least sixty images per minute at the same time demonstrating effective batch processing capability
+The system must maintain performance even when image quality varies or lighting conditions change
+The system must be ready for expansion to additional hospitals and agricultural institutions
+The system must operate offline after the model has been trained with no need for an internet connection
+The system must provide user- interfaces for non-technical staff including both command-line and web application options
+The system must generate summary reports and visualizations such as confusion matrices and training curves for researchers
+The system must be portable and deployable on consumer hardware without needing a specialized GPU for inference
+The system must provide reliability assessments that are based on confidence scores
+
+
 
 
 
