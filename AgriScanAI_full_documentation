@@ -13,5 +13,13 @@ Grape, Orange, Peach, Bell Pepper, Potato, Raspberry, Soybean, Squash, Strawberr
 This AI solution matches South African goals of using AI technologies to build new tools for agriculture.
 The solution will lower the workload. 
 It will give a path from detection to corrective actions, for Plant diseases that threaten crops.
-=It will also bring expertise to smallholder farmers who cannot afford or reach expert plant pathologists.
+It will also bring expertise to smallholder farmers who cannot afford or reach expert plant pathologists.
+
+Primary Objectives:
+ Increase the accuracy of plant disease diagnosis to than 75% using the PlantVillage dataset
+ Cut down the time needed for disease diagnosis from days to just seconds
+ Boost crop prognosis by detecting diseases early and helping farmers make smart agricultural decisions
+ Lower agricultural losses and reduce input costs for farmers while still maintaining high crop quality
+ Expand access to plant disease diagnosis in low-resource and rural areas
+ Show how AgriScan AI can automate the process of diagnosing plant diseases in agriculture
 
