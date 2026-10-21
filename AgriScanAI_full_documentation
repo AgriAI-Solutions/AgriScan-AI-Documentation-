@@ -80,6 +80,29 @@ The system must generate summary reports and visualizations such as confusion ma
 The system must be portable and deployable on consumer hardware without needing a specialized GPU for inference
 The system must provide reliability assessments that are based on confidence scores
 
+CONSTRAINTS
+
+A. Scope Constraints:
+ AgriScan AI is limited to the analysis of plant foliar (leaf) images
+ AgriScan AI can classify 38 specific disease conditions found in the PlantVillage dataset across 14 crop species.
+ AgriScan AI cannot detect diseases in stems, roots, fruits or other plant parts.
+ AgriScan AI cannot detect diseases at once in a single image; AgriScan AI focuses on a single disease.
+
+ B. Transparency Constraints:
+  AgriScan AI will ensure transparency in reporting disease detection, classification and confidence assessment.
+  The transparency in how confidence levelsre determined is non‑negotiable for AgriScan AI.
+  All outputs from AgriScan AI must include a disclaimer that AgriScan AI is a decision support tool, not a replacement for certified plant pathologists.
+
+C. Operational Constraints:
+  AgriScan AI is being tested on computers with limited compute power, which may affect AgriScan AI performance and accuracy.
+  AgriScan AI does not account for factors such as weather patterns, soil conditions or pest presence.
+  AgriScan AI requires well‑lit leaf images, for optimal performance.
+  AgriScan AI does not predict disease progression timelines. Yield loss estimates.
+
+ D. Geographic Constraints:
+ AgriScan AI knowledge base is based on agricultural practices and may not account for region‑specific disease variations or local treatment recommendations.
+ Regional disease databases are not yet integrated into AgriScan AI.
+
 7. RISKS
 
 Risk: Misclassification due to poor-quality images or ambiguous symptoms. Inaccuracy
