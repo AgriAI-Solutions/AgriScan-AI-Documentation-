@@ -80,7 +80,7 @@ The system must generate summary reports and visualizations such as confusion ma
 The system must be portable and deployable on consumer hardware without needing a specialized GPU for inference
 The system must provide reliability assessments that are based on confidence scores
 
-CONSTRAINTS
+6. CONSTRAINTS
 
 A. Scope Constraints:
  AgriScan AI is limited to the analysis of plant foliar (leaf) images
@@ -193,4 +193,19 @@ Training Images: 43,596 images (80% training with augmentation 20% validation wi
 Test Images: 10,709 images (no augmentation, real-world conditions)
 Classes:38 disease conditions across 14 crop species
 Image Format: RGB resized to 128x128 pixels
+
+9. PROBLEM DEFINITION
+Diagnosing plant diseases by looking at leaves is very important for food security around the world.. Diagnosing plant diseases requires a lot of time and resources. In South Africa and other developing regions there are not agricultural extension officers and plant pathologists.
+The officers that exist are often overworked, serving geographic areas with limited resources. 
+This leads to mistakes delays in treating plant diseases and significant crop losses for smallholder farmers. Looking at leaf symptoms by hand takes a time can lead to errors and slows down treatment for serious conditions such as Late Blight in potatoes Early Blight in tomatoes and Cedar Apple Rust in apples.
+This issue is very important in agriculture because plant diseases still cause economic damage and threaten food security. Finding plant diseases early and accurately can greatly improve crop yields. Reduce losses for farmers who depend on agriculture for their livelihoods. Smallholder farmers, 
+who constitute the majority of producers in Africa cannot afford or access expert plant pathologists making timely diagnosis nearly impossible.
+The proposed solution uses the PlantVillage dataset and deep learning methods, convolutional neural networks to automatically analyze and classify images of leaves. This helps solve the problem of diagnosing plant diseases. 
+The solution will help lower the workload for agricultural extension officers improve accuracy and make reporting faster.
+The solution is designed to support farmers and agricultural practitioners by helping them give quicker and dependable diagnoses of plant diseases. The solution does not replace professionals but acts as a helpful tool so they can make better decisions with more confidence.
+The solution is relevant to the theme because it addresses a fundamental challenge in crop management—disease detection—using modern AI technologies. The solution aligns with South Africas and global initiatives to leverage AI for innovation and food security.
+The solution is beneficial because it democratizes access to expertise reduces dependency on scarce extension services and enables early intervention that can save crops and livelihoods.
+The problem is clearly articulated: manual disease diagnosis is slow error‑prone and inaccessible, to smallholder farmers.
+The solution is achievable using proven deep learning techniques and available datasets.
+The benefits are tangible: crop losses, lower input costs, increased yields and improved food security.
 
