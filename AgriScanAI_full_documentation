@@ -108,10 +108,13 @@ C. Operational Constraints:
 7. RISKS
 
 Risk: Misclassification due to poor-quality images or ambiguous symptoms. Inaccuracy
-Mitigation: Avoid data imbalance by ensuring the AI has training data from every class used for classification. The PlantVillage dataset gives a mix of disease classes.
-Mitigation: Use Data Augmentation techniques such as flips, small rotations of ±18° zoom of ±10% and contrast changes of ±10% to grow the training data while keeping biological features intact.
-This helps the AI learn that a disease looks the same even if the picture is slightly turned or a bit brighter.
-Mitigation: Train the AI carefully for accuracy by using callbacks like EarlyStopping, ModelCheckpoint and ReduceLROnPlateau. These tools help the model perform well and stop it from overfitting.
+Mitigation:Deal with data imbalance by using class weighting that is calculated from training data labels. 
+The PlantVillage dataset shows an imbalance for example Apple Scab has 503 images while Orange Citrus Greening has 4,527 images.
+Class weighting makes sure that minority classes receive the attention during training.
+Mitigation: Apply Data Augmentation techniques such, as flip 10% zoom and 10% contrast adjustment to expand the training dataset while keeping biological features unchanged. 
+This helps the model learn that diseases remain the same even if the image is slightly rotated or altered.
+Mitigation: Implement a warning system that only operates when confidence is low (below fifty percent). 
+Mitigation: stops the system from giving treatment recommendations and asks for field confirmation, which helps avoid trust, in uncertain predictions.
 
  Risk: End User Over-reliance on AI
 Mitigation: Build a reporting system that shows confidence scores for example "Late Blight – 92%" and a reliability note to stop users from trusting uncertain predictions blindly.
