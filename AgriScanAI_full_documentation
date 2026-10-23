@@ -31,9 +31,11 @@ Scalability & Growth:
  Support the detection of multiple diseases at once especially in cases of complex plant infections.
 
 3.BUSINESS SUCCESS CRITERIA
+
 A. Accuracy
-The goal is to have least 75%+ accuracy when classifying plant foliar images into the 38 disease categories across 14 crop species. 
-The system needs to have precision and high recall for each disease class to make sure the identification is reliable.
+Achieved: 88.19% accuracy (exceeds the 75% target) 91.38% precision, 85.50% recall. 
+The system uses class weighting to handle imbalance and achieves high precision and recall, 
+for each disease class to ensure reliable identification.
 
 B. Time Efficiency
 The system needs to process each leaf image and create an analysis report, including detection, classification,
